@@ -1,0 +1,329 @@
+@media screen and (max-width: 900px) {
+  body{
+    background-color: #02010a;
+  }
+  body.inicio a.inicio, body.paisajes a.paisajes, body.retratos a.retratos{
+    text-decoration: none;
+  }
+  #contenido{
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Estilos contenedor-titulo*/
+  #cabecera{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    animation: slidein 2s;
+  }
+  /*Animación slidein*/
+  @keyframes slidein {
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      0%;
+    }
+  }
+
+  #cabecera h1{
+  text-shadow: 2px 2px black;
+  margin-left: 10px;
+  order: 1;
+  flex: 1;
+  }
+  /*Estilos barra de navegación*/
+  #cabecera nav{
+  order: 2;
+  flex: 1;
+  text-align: center;
+  padding-top: 25px;
+   }
+
+  #cabecera nav a{
+    padding: 10px;
+    color: inherit;
+    margin-top: 50%;
+    font-size: 1.5em;
+  }
+
+  /*Estilos Imagenes*/
+
+  section img{ /*para todas las imagenes*/
+    box-shadow: 2px 2px #02010a;
+  }
+
+  .central{
+    background-color: #82c3a6;
+  }
+  .central img{
+    width: 75%;
+    margin: 10px 50px 10px 50px;
+  }
+  .secundario{
+  background-color: #d5c75f;
+  align-items: center;
+  }
+  .secundario > div{
+  flex: 1;
+  overflow: hidden;
+  }
+  .secundario > div img{
+    width: 75%;
+    display: block;
+    margin: 10px 50px 10px 50px;
+    border: 1px;
+  }
+
+  .secundario figcaption{ /*estilo para el figcaption de las imagenes*/
+    align-items: flex-end;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .secundario > #imgizquierda img:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+    transition: transform 1s;
+  }
+
+  .secundario> #imgderecha img:hover{s
+    box-shadow: 2px 2px #82c3a6;
+    transform: translate3d(20px,-5px,0px);
+    transition: transform 1s;
+  }
+
+  /*Estilo Imagenes pag Paisajes*/
+    div.paisajes{
+      background-color: #d5c75f;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    div.paisajes div img{
+      width: 100%;
+      background-color: #82c3a6;
+    }
+    div.paisajes div{
+      padding: 5px;
+    }
+    .img1{
+      filter: blur(10px);
+    }
+    div.paisajes div:nth-child(even){
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    .img3{
+      filter: sepia(90%);
+    }
+
+  /*Estilo Footer*/
+
+  footer{
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Contacto, .Terminos,.Redes,.Derechos{
+    margin-left: 50px;
+  }
+   p:first-child {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+  }
+
+  /*Estilo iconos de redes sociales*/
+  .imgred{
+    float: left;
+    width: 30px;
+    padding: 2px;
+  }
+
+/*Media query para escritorio*/
+}
+@media (min-width:900px) {
+  body{
+    background-color: #02010a;
+  }
+
+  body.inicio a.inicio, body.paisajes a.paisajes, body.retratos a.retratos{
+    text-decoration: none;
+  }
+
+  #contenido{
+    font-family: 'Dancing Script', cursive;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*Estilos contenedor-titulo*/
+  #cabecera{
+    background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    animation: slidein 2s;
+  }
+  /*Animación slidein*/
+  @keyframes slidein {
+    0%{
+      margin-top: 150%;
+    }
+    60%{
+      margin-top: -5%;
+    }
+    100%{
+      0%;
+    }
+  }
+
+  #cabecera h1{
+  text-shadow: 2px 2px black;
+  margin-left: 10px;
+  order: 1;
+  flex: 1;
+  }
+  /*Estilos barra de navegación*/
+  #cabecera nav{
+  order: 2;
+  flex: 1;
+  text-align: center;
+  padding-top: 25px;
+   }
+
+  #cabecera nav a{
+    padding: 10px;
+    color: inherit;
+    margin-top: 50%;
+    font-size: 1.5em;
+  }
+
+  /*Estilos Imagenes*/
+
+  section img{ /*para todas las imagenes*/
+    box-shadow: 2px 2px #02010a;
+  }
+
+  .central{
+    background-color: #82c3a6;
+  }
+  .central img{
+    width: 85%;
+    margin: 10px 50px 10px 50px;
+  }
+  .secundario{
+  background-color: #d5c75f;
+  display:flex;
+  align-items: center;
+  }
+  .secundario > div{
+  flex: 1;
+  overflow: hidden;
+  }
+  .secundario > div img{
+    width: 75%;
+    display: block;
+    margin: 10px 50px 10px 50px;
+    border: 1px;
+  }
+
+  .secundario figcaption{ /*estilo para el figcaption de las imagenes*/
+    align-items: flex-end;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .secundario > #imgizquierda img:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px #82c3a6;
+    transition: transform 1s;
+  }
+
+  .secundario> #imgderecha img:hover{s
+    box-shadow: 2px 2px #82c3a6;
+    transform: translate3d(20px,-5px,0px);
+    transition: transform 1s;
+  }
+
+  /*Estilo Imagenes pag Paisajes*/
+    div.paisajes{
+      background-color: #d5c75f;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    div.paisajes div img{
+      width: 90%;
+      background-color: #82c3a6;
+    }
+    div.paisajes >div{
+      width: 33%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 3px;
+    }
+    .img1{
+      filter: blur(10px);
+    }
+    div.paisajes div:nth-child(even){
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+    }
+
+    .img3{
+      filter: sepia(90%);
+    }
+  /*Estilo Footer*/
+
+  footer{
+    background-color: #C6d5c5;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Contacto{
+    flex: 1;
+    padding-left: 20px;
+  }
+   p:first-child {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+  }
+  .Terminos{
+    flex: 1;
+  }
+  .Redes{
+    flex: 1;
+  }
+  .Derechos{
+
+    flex: 1;
+  }
+  /*Estilo iconos de redes sociales*/
+  .imgred{
+    float: left;
+    width: 30px;
+    padding: 2px;
+  }
+
+}
